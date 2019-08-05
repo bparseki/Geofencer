@@ -1,0 +1,269 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [ {
+    "geometry" : {
+      "coordinates" : [ -118.1507140, 34.1413891 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=2075142942107850837",
+      "Location" : {
+        "Address" : "257 South Fair Oaks Avenue Suite 210, Pasadena, CA 91105, United States",
+        "Business Name" : "Select Physical Therapy",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "34.1413891",
+          "Longitude" : "-118.1507140"
+        }
+      },
+      "Published" : "2018-11-02T22:43:17Z",
+      "Title" : "Select Physical Therapy",
+      "Updated" : "2018-11-02T22:43:17Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -118.2464751, 34.1471415 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=13820606970253437395",
+      "Location" : {
+        "Address" : "130 North Glendale Avenue, Glendale, CA 91206, United States",
+        "Business Name" : "Dollar Tree",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "34.1471415",
+          "Longitude" : "-118.2464751"
+        }
+      },
+      "Published" : "2017-11-11T19:30:13Z",
+      "Title" : "Dollar Tree",
+      "Updated" : "2017-11-11T19:30:13Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -118.2428634, 34.1537760 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=13641714156668322176",
+      "Location" : {
+        "Address" : "520 North Glendale Avenue, Glendale, CA 91206, United States",
+        "Business Name" : "Virgil's Hardware Home Center",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "34.1537760",
+          "Longitude" : "-118.2428634"
+        }
+      },
+      "Published" : "2017-11-11T19:29:20Z",
+      "Title" : "Virgil's Hardware Home Center",
+      "Updated" : "2017-11-11T19:29:20Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -118.248561, 34.115110 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=10294531461803753104",
+      "Location" : {
+        "Latitude" : "34.115110",
+        "Longitude" : "-118.248561"
+      },
+      "Published" : "2017-11-11T19:13:18Z",
+      "Title" : "Goodwill",
+      "Updated" : "2017-11-11T19:13:18Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -118.2589307, 34.1364105 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=18132236775790239113",
+      "Location" : {
+        "Address" : "320 West Windsor Road, Glendale, CA 91204, United States",
+        "Business Name" : "Salvation Army Corps & Community Center",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "34.1364105",
+          "Longitude" : "-118.2589307"
+        }
+      },
+      "Published" : "2017-11-11T19:12:53Z",
+      "Title" : "Salvation Army Corps & Community Center",
+      "Updated" : "2017-11-11T19:12:53Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -118.2346624, 34.1486856 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=15356176546240835756",
+      "Location" : {
+        "Address" : "210 North Verdugo Road, Glendale, CA 91206, United States",
+        "Business Name" : "Smart & Final Extra!",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "34.1486856",
+          "Longitude" : "-118.2346624"
+        }
+      },
+      "Published" : "2017-11-11T18:32:42Z",
+      "Title" : "Smart & Final Extra!",
+      "Updated" : "2017-11-11T18:32:42Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -118.2586030, 34.1429980 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=17238038750056872901",
+      "Location" : {
+        "Address" : "2195 Galleria Way, Glendale, CA 91210, United States",
+        "Business Name" : "Target",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "34.1429980",
+          "Longitude" : "-118.2586030"
+        }
+      },
+      "Published" : "2017-11-11T18:32:14Z",
+      "Title" : "Target",
+      "Updated" : "2017-11-11T18:32:14Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.3430895, 48.8861929 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=14284543405106484365",
+      "Location" : {
+        "Geo Coordinates" : {
+          "Latitude" : "48.8861929",
+          "Longitude" : "2.3430895"
+        }
+      },
+      "Published" : "2017-10-28T06:39:49Z",
+      "Title" : "Montmartre",
+      "Updated" : "2017-10-28T06:39:49Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.3371605, 48.8462217 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=545460441531939211",
+      "Location" : {
+        "Address" : "75006 Paris, France",
+        "Business Name" : "Luxembourg Gardens",
+        "Country Code" : "FR",
+        "Geo Coordinates" : {
+          "Latitude" : "48.8462217",
+          "Longitude" : "2.3371605"
+        }
+      },
+      "Published" : "2017-10-28T06:34:49Z",
+      "Title" : "Luxembourg Gardens",
+      "Updated" : "2017-10-28T06:34:49Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.3375084, 48.8583424 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=5352402163645865109",
+      "Location" : {
+        "Address" : "Pont des Arts, 75006 Paris, France",
+        "Business Name" : "Pont des Arts",
+        "Country Code" : "FR",
+        "Geo Coordinates" : {
+          "Latitude" : "48.8583424",
+          "Longitude" : "2.3375084"
+        }
+      },
+      "Published" : "2017-10-28T06:33:34Z",
+      "Title" : "Pont des Arts",
+      "Updated" : "2017-10-28T06:33:34Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -118.2208076, 34.0773927 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=8691525871966622596",
+      "Location" : {
+        "Address" : "210 North Avenue 21, Los Angeles, CA 90031, United States",
+        "Business Name" : "Society of St. Vincent de Paul Los Angeles Thrift Store",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "34.0773927",
+          "Longitude" : "-118.2208076"
+        }
+      },
+      "Published" : "2017-09-15T07:51:21Z",
+      "Title" : "Society of St. Vincent de Paul Los Angeles Thrift Store",
+      "Updated" : "2017-09-15T07:51:21Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -118.1284956, 34.0946477 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=2375206310622444899",
+      "Location" : {
+        "Address" : "121 West Main Street, Alhambra, CA 91801, United States",
+        "Business Name" : "In Motion Sports",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "34.0946477",
+          "Longitude" : "-118.1284956"
+        }
+      },
+      "Published" : "2016-12-31T05:15:26Z",
+      "Title" : "In Motion Sports",
+      "Updated" : "2016-12-31T05:15:26Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -118.0739699, 34.1492278 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=3182056610428505195",
+      "Location" : {
+        "Address" : "3660 East Foothill Boulevard, Pasadena, CA 91107, United States",
+        "Business Name" : "Harbor Freight Tools",
+        "Country Code" : "US",
+        "Geo Coordinates" : {
+          "Latitude" : "34.1492278",
+          "Longitude" : "-118.0739699"
+        }
+      },
+      "Published" : "2016-12-27T20:53:02Z",
+      "Title" : "Harbor Freight Tools",
+      "Updated" : "2016-12-27T20:53:02Z"
+    },
+    "type" : "Feature"
+  } ]
+}

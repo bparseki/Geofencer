@@ -14,6 +14,7 @@
 		228024FE22F0F83800A529DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 228024FC22F0F83800A529DB /* LaunchScreen.storyboard */; };
 		2280250922F0F83800A529DB /* GeofencerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280250822F0F83800A529DB /* GeofencerTests.swift */; };
 		2280251422F0F83800A529DB /* GeofencerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280251322F0F83800A529DB /* GeofencerUITests.swift */; };
+		2280252222F202CB00A529DB /* Saved Places.json in Resources */ = {isa = PBXBuildFile; fileRef = 2280252122F202CB00A529DB /* Saved Places.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2280250F22F0F83800A529DB /* GeofencerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeofencerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2280251322F0F83800A529DB /* GeofencerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofencerUITests.swift; sourceTree = "<group>"; };
 		2280251522F0F83800A529DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2280252122F202CB00A529DB /* Saved Places.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Saved Places.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				228024FA22F0F83800A529DB /* Assets.xcassets */,
 				228024FC22F0F83800A529DB /* LaunchScreen.storyboard */,
 				228024FF22F0F83800A529DB /* Info.plist */,
+				2280252122F202CB00A529DB /* Saved Places.json */,
 			);
 			path = Geofencer;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2280252222F202CB00A529DB /* Saved Places.json in Resources */,
 				228024FE22F0F83800A529DB /* LaunchScreen.storyboard in Resources */,
 				228024FB22F0F83800A529DB /* Assets.xcassets in Resources */,
 				228024F922F0F83700A529DB /* Main.storyboard in Resources */,
