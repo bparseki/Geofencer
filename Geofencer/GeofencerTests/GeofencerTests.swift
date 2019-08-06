@@ -10,14 +10,16 @@ import XCTest
 @testable import Geofencer
 
 struct Place: Decodable {
-    let businessName: String
+    let title: String
     let coordinates: GeoCoordinates
 }
 
-struct GeoCoordinates : Decodable {
+struct GeoCoordinates {
     var latitude : Double
     var longitude: Double
-    
+}
+
+extension GeoCoordinates : Decodable {
     enum CodingKeys: String, CodingKey {
         case latitude = "Latitude"
         case longitude = "Longitude"
@@ -32,31 +34,42 @@ struct GeoCoordinates : Decodable {
 }
 
 struct Location : Decodable {
-    let businessName : String
     let geoCoordinates : GeoCoordinates
     
     enum CodingKeys: String, CodingKey {
-        case businessName = "Business Name"
         case geoCoordinates = "Geo Coordinates"
+        case latitude = "Latitude"
+        case longitude = "Longitude"
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        businessName = try container.decode(String.self, forKey: .businessName)
-        geoCoordinates = try container.decode(GeoCoordinates.self, forKey: .geoCoordinates)
+        let gCoordinates = try container.decodeIfPresent(GeoCoordinates.self, forKey: .geoCoordinates)
+        if (gCoordinates == nil) {
+            let latitudeString = try container.decode(String.self, forKey: .latitude)
+            let longitudeString = try container.decode(String.self, forKey: .longitude)
+            geoCoordinates = GeoCoordinates(latitude : Double(latitudeString) ?? 0,
+                                            longitude: Double(longitudeString) ?? 0)
+        }
+        else {
+            geoCoordinates = gCoordinates!
+        }
     }
 }
 
 struct Properties : Decodable {
     let location: Location
+    let title : String
     
     enum CodingKeys: String, CodingKey {
         case location = "Location"
+        case title = "Title"
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         location = try container.decode(Location.self, forKey: .location)
+        title = try container.decode(String.self, forKey: .title)
     }
 }
 
@@ -85,18 +98,14 @@ extension SavedPlaces: Decodable {
     }
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        //let featuresContainer = try container.nestedContainer(keyedBy: CodingKeys.FeatureKeys.self, forKey: .features)
         features = try container.decode([Feature].self, forKey: .features)
-        //let features = try container.decode([Feature].self, forKey: .features)
         places = []
         for feature in features {
             //print(feature)
-            let newPlace = Place(businessName: feature.properties.location.businessName,
+            let newPlace = Place(title: feature.properties.title,
                                  coordinates: feature.properties.location.geoCoordinates)
             places.append(newPlace)
         }
-        
-        
     }
 }
 
@@ -127,41 +136,15 @@ class GeofencerTests: XCTestCase {
     
     
     func testJsonDecoder() {
-        
-        let json = """
-        {
-            "type" : "FeatureCollection",
-            "features" : [ {
-                "geometry" : {
-                    "coordinates" : [ -118.1507140, 34.1413891 ],
-                    "type" : "Point"
-                },
-                "properties" : {
-                  "Google Maps URL" : "http://maps.google.com/?cid=2075142942107850837",
-                  "Location" : {
-                    "Address" : "257 South Fair Oaks Avenue Suite 210, Pasadena, CA 91105, United States",
-                    "Business Name" : "Select Physical Therapy",
-                    "Country Code" : "US",
-                    "Geo Coordinates" : {
-                      "Latitude" : "34.1413891",
-                      "Longitude" : "-118.1507140"
-                    }
-                  },
-                  "Published" : "2018-11-02T22:43:17Z",
-                  "Title" : "Select Physical Therapy",
-                  "Updated" : "2018-11-02T22:43:17Z"
-                },
-                "type" : "Feature"
-            }]
-        }
-        """.data(using: .utf8)!
+        guard let url = Bundle.main.url(forResource: "Saved Places", withExtension: "json") else { return }
+        guard let json = try? Data(contentsOf: url) else { return }
         let decoder = JSONDecoder()
         let geoPointAccuracy = 0.00001
         do {
             let savedPlaces = try decoder.decode(SavedPlaces.self, from: json)
             XCTAssertEqual(savedPlaces.places[0].coordinates.latitude, 34.1413891, accuracy: geoPointAccuracy)
             XCTAssertEqual(savedPlaces.places[0].coordinates.longitude, -118.1507140, accuracy: geoPointAccuracy)
-            XCTAssertEqual(savedPlaces.places[0].businessName, "Select Physical Therapy")
+            XCTAssertEqual(savedPlaces.places[0].title, "Select Physical Therapy")
             //all fine with jsonData here
         } catch {
             //handle error
