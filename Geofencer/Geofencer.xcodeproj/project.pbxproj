@@ -15,6 +15,8 @@
 		2280250922F0F83800A529DB /* GeofencerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280250822F0F83800A529DB /* GeofencerTests.swift */; };
 		2280251422F0F83800A529DB /* GeofencerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280251322F0F83800A529DB /* GeofencerUITests.swift */; };
 		2280252222F202CB00A529DB /* Saved Places.json in Resources */ = {isa = PBXBuildFile; fileRef = 2280252122F202CB00A529DB /* Saved Places.json */; };
+		22C1ECAB22FA287700D3A639 /* SavedPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1ECAA22FA287700D3A639 /* SavedPlaces.swift */; };
+		22C1ECAC22FA297C00D3A639 /* SavedPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1ECAA22FA287700D3A639 /* SavedPlaces.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		2280251322F0F83800A529DB /* GeofencerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofencerUITests.swift; sourceTree = "<group>"; };
 		2280251522F0F83800A529DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2280252122F202CB00A529DB /* Saved Places.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Saved Places.json"; sourceTree = "<group>"; };
+		22C1ECAA22FA287700D3A639 /* SavedPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlaces.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 				228024FC22F0F83800A529DB /* LaunchScreen.storyboard */,
 				228024FF22F0F83800A529DB /* Info.plist */,
 				2280252122F202CB00A529DB /* Saved Places.json */,
+				22C1ECAA22FA287700D3A639 /* SavedPlaces.swift */,
 			);
 			path = Geofencer;
 			sourceTree = "<group>";
@@ -261,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				228024F622F0F83700A529DB /* ViewController.swift in Sources */,
+				22C1ECAB22FA287700D3A639 /* SavedPlaces.swift in Sources */,
 				228024F422F0F83700A529DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2280250922F0F83800A529DB /* GeofencerTests.swift in Sources */,
+				22C1ECAC22FA297C00D3A639 /* SavedPlaces.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
