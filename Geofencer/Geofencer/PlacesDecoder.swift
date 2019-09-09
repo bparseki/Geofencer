@@ -9,10 +9,10 @@
 import Foundation
 
 struct PlacesDecoder {
-    static let filename = "Saved Places"
-    static let fileExt = "json"
-    
     static func fetchPlaces() -> [Place] {
+        let filename = "Saved Places"
+        let fileExt = "json"
+        
         guard let url = Bundle.main.url(forResource: filename, withExtension: fileExt) else { return []}
         guard let json = try? Data(contentsOf: url) else { return []}
         let decoder = JSONDecoder()
